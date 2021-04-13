@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/fragment :: head">
+</head>
+<body>
+<header th:replace="fragments/fragment :: header"></header>
+<main>
+    <section class="site-header">
+
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <!-- <h1>Welcome, User.  Please, <a href="login.html">Login</a> if you have an account or <a href="register.html">Register</a> to watch free high quality movies!</h1> -->
+
+        <h3>What do you get:</h3>
+        <h2><i class="fas fa-dot-circle"></i> <span class="dot-span">Watch your favourite movies and even serials (soon) free.</span></h2>
+        <h2><i class="fas fa-dot-circle"></i> <span class="dot-span">Enjoy on your TV. Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+          Use our special designed interface for Android and IOS. <i class="fas fa-mobile"></i></span></h2>
+        <div id="img-frame-TV">
+            <div class="our-story-card-animation-container">
+                <img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="our-story-card-img">
+                <div class="our-story-card-animation">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.UT2ap1P7e3S02c_hQpqNxAHaEK&pid=Api/?" alt="">
+                    <div class="our-story-card-animation-text">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2><i class="fas fa-dot-circle"></i> <span class="dot-span">Download your shows to watch offline. Save your favorites easily and always have something to watch.</span></h2>
+        <img id="img-frame-COMP" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="nothing">
+        <!-- <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="nothing"> -->
+        <!-- <div class="our-story-card-animation-container"><img alt="" class="our-story-card-img" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" data-uia="our-story-card-img"><div class="our-story-card-animation"><div class="our-story-card-animation-image"><img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"></div><div class="our-story-card-animation-text"><div id="" class="text-0" data-uia="">Stranger Things</div><div id="" class="text-1" data-uia="">Downloading...</div></div></div></div> -->
+        <h2><i class="fas fa-dot-circle"></i> <span class="dot-span">Watch everywhere. Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</span></h2>
+        <h1>All you need to do is to click <a href="/users/login">here</a> to login or <a href="/users/register">register</a> and join our comunity.</h1>
+
+
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <div class="team">
+            &copy;iMovies Team 2021. All rights reserved.
+        </div>
+    </div>
+</footer>
+<script th:replace="fragments/fragment :: script"></script>
+
+</body>
+</html>

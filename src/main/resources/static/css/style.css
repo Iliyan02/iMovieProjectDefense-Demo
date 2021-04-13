@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap');
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.navigation p{
+    display: inline-block;
+    font-size: 22px;
+    width: 100px;
+
+}
+
+body > header > section > nav > div > a:nth-child(1) > p{
+    margin-bottom: 2px;
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+body{
+    /* background: url('https://www.desktopbackground.org/download/1440x900/2014/10/24/845118_best-deadpool-movie-wallpapers_2578x1611_h.jpg'); */
+    background: black;
+}
+/*
+https://img.wallpapersafari.com/desktop/1440/900/94/84/VGaEvz.jpg
+https://1.bp.blogspot.com/-Ya8QH0k5h_o/XUmnRvGGldI/AAAAAAAAAcQ/hxArI80dgZoRMp5QE25-T_Hd7IDx5XZhQCLcBGAs/s1600/cropped-fast-furious-presents-hobbs-shaw-5d3707e673d3e.jpg */
+
+
+body > main > section > h1:nth-child(9){
+    font-size: 40px;
+}
+
+.site-header h1{font-size: 50px;
+    color: white;
+    width: 90%;
+    /* margin-right: 40px; */
+    padding: 40px 10px;
+    margin-top: 20px;
+    background: rgb(0, 0, 0);
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.site-header h2{font-size: 30px;
+    color: white;
+    width: 90%;
+    /* margin-right: 40px; */
+    padding: 40px 10px;
+    margin-top: 20px;
+    background: rgb(228, 222, 222);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.site-header{
+    margin-left: 140px;
+}
+
+#navbar{
+    height: 65px;
+}
+
+body > main > section{
+    margin-top: 70px;
+}
+
+.site-header-login div{
+
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 500px;
+}
+
+.site-header-login{
+    margin-top: 1px;
+    font-size: 30px;
+    color: #f9f9f9;
+    margin-left: 300px;
+}
+
+body > main > section:nth-child(1) > h1{
+    color: #f9f9f9;
+    text-align: center;
+    /* margin-left: 530px; */
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:darkslategrey;
+    color: white;
+    text-align: center;
+}
+
+
+
+body > main > section.site-header-login > div > div{
+    font-size: inherit;
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
+
+body > main > section > h2 > span{
+    margin-left: 33px;
+}
+
+body > main > section > h3{
+    font-size: 40px;
+    color: aliceblue;
+}
+
+#home-body{
+    /* background: url('https://media.cdnp.elobservador.com.uy/102019/1571417221882.jpg'); */
+    /* background: url('https://media.cdnp.elobservador.com.uy/102019/1571417221882.jpg') right bottom no-repeat, url('https://img.wallpapersafari.com/desktop/1440/900/94/84/VGaEvz.jpg') left top repeat; */
+    /* background-image:
+      url('https://media.cdnp.elobservador.com.uy/102019/1571417221882.jpg'),
+      url('https://img.wallpapersafari.com/desktop/1440/900/94/84/VGaEvz.jpg');
+    background-position:
+      top right,
+      bottom left;
+    background-repeat:
+      no-repeat; */
+    background: black;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black  ;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn{
+    color: #fefefe;
+    background: black;
+}
+
+.btn{
+    border-color:black;
+}
+
+
+
+#img-frame-TV > div > img{
+    margin-left: 240px;
+}
+
+#img-frame-COMP{
+    width: 500px;
+    margin-left: 300px;
+}
+
+#img-frame-TV > div{
+    /* margin: -10% -5% -5% 0; */
+    position: relative;
+    /* display: block; */
+}
+
+#img-frame-TV > div > div{
+
+    margin-left: 557px;
+    max-width: 73%;
+    max-height: 51%;
+    position: absolute;
+    top: 46%;
+    /* left: 50%; */
+    -webkit-transform: translate(-50%,-50%);
+}
+
+#home-body > main > div{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+#home-body > main > div > div > a{
+    font-size: 30px;
+    color: wheat;
+}
+
+.random-movies-div{display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -.4rem;
+    margin-right: -.4rem;
+    background: rgb(228, 222, 222);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#home-body > main > div > div.card > div > a{
+    font-size: 15px;
+    background:dimgray;
+}
+
+#home-body > main > div > div > h1 > a{
+    font-size: 30px;
+    color: wheat;
+}
+
+
+.card-body{
+    background: black;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix::before, .clearfix::after{
+    content: " ";
+    display: table;
+}
+
+.clearfix::after{
+    clear: both;
+}
+
+.wrapper{
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 300;
+
+}
+
+
+
+
+#banner_content_wrapper{
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#poster{
+    width: 275px;
+    position: relative;
+    float: left;
+
+}
+
+.featured_image{
+    width: 100%;
+    max-width: 100%;
+    border-radius: .5em;
+    -webkit-box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow:  0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+    box-shadow:  0px 0px 76px 0px rgba(0, 0, 0, 0.47);
+}
+
+.play_button{
+    position:absolute;
+
+    width: 80px;
+    left: 57%;
+    top: 45%;
+    margin: -40px 0 0 -40px;
+    font-size: 60px;
+}
+
+#content{
+    float: left;
+    width: 500px;
+    margin-left: 100px;
+    color: white;
+    background: rgb(228, 222, 222);
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+#banner{
+    background: url('https://cdn.vox-cdn.com/thumbor/6rU5sGc4CfG7UH2UTjF8kltb-UQ=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/6389217/deadpool-gallery-03-gallery-image.0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 6.5em 0;
+}
+
+
+.row{
+    width: 100%;
+}
+
+.post {
+    width: 14%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.movie-home-images{
+    width: 100%;
+    max-width: 100%;
+    border-radius: .5em;
+}
+
+h3{
+    color: aliceblue;
+}
+
+h2{
+    color: #888;
+}
+
+section > div > header > a{
+    color: aqua;
+    font-size: xx-large;
+}
+
+.post_info{
+    color: aquamarine;
+}
+
+
+.movie-name{
+    font-size: 27px;
+    color:white;
+
+}
+/*
+#top_movies{
+  -webkit-box-shadow: 0px 0px 76px 0px rgba(152, 230, 223, 0.47);
+  -moz-box-shadow:  0px 0px 76px 0px rgba(155, 197, 214, 0.47);
+  box-shadow:  0px 0px 76px 0px rgba(109, 242, 252, 0.47);
+} */
+
+.movie-home-images{
+    -webkit-box-shadow: 0px 0px 76px 0px rgba(124, 215, 252, 0.47);
+    -moz-box-shadow:  0px 0px 76px 0px rgba(90, 0, 0, 0.47);
+    box-shadow:  0px 0px 76px 0px rgba(211, 241, 255, 0.322);
+}
+
+.inputs-register{
+
+    margin-right: 450px;
+    margin-left: 500px;
+}
+
+#navbar > li > form > button{
+    margin-bottom: 22px;
+}
+
+#PPp{
+    color: #f9f9f9;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#PP{
+    color: #f9f9f9;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+#AUul{
+    color: white;
+    margin-left: 150px;
+}
+
+#headForMoviesGenres{
+    font-size: xx-large;
+    color: aqua;
+}
+
+#searchInput{
+    width: 300px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+#top_movies{
+    margin-bottom: 30px;
+}
+

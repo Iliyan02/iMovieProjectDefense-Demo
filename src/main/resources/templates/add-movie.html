@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMovies</title>
+    <link rel="stylesheet" href="/css/style2.css"/>
+</head>
+<body>
+<header th:replace="fragments/fragment :: header"></header>
+<main>
+    <div style="margin-top: 30px" class="d-flex justify-content-center">
+        <form
+                th:action="@{/movies/add}"
+                method="POST"
+                th:object="${movieAddBindingModel}"
+              class="text-light">
+            <div class="form-row m-5">
+                <div class="col">
+                    <small th:if="${exists}"  id="nameUniqueError"
+                           class="text-light form-text bg-danger rounded">This movie is already added</small>
+
+                    <label for="name">Movie name</label>
+                    <input
+                            th:field="*{name}"
+                            th:errorclass="is-invalid"
+                            required
+                            id="name"
+                            name="name"
+                            type="text" class="form-control" placeholder="Movie name">
+                    <small id="nameError" class="invalid-feedback form-text bg-danger rounded">Name must be between 3 and 20
+                        characters</small>
+                </div>
+                <div class="col">
+                    <label for="imageUrl">Image Url</label>
+                        <input
+                                th:field="*{imageUrl}"
+                                th:errorclass="is-invalid"
+                                required
+                               name="imageUrl"
+                                id="imageUrl"
+                               type="text" class="form-control" placeholder="Image Url">
+                    >
+                    <small id="imageUrlError" class="invalid-feedback form-text bg-danger rounded">Image url must be more than 5
+                        characters</small>
+                </div>
+                <div class="col">
+                    <label for="backgroundImage">Background Image Url</label>
+                        <input  th:field="*{backgroundImage}"
+                                th:errorclass="is-invalid"
+                                id="backgroundImage"
+                                name="backgroundImage"
+                                required
+                                 type="text" class="form-control" placeholder="Background Image Url">
+                    <small id="backgroundImageError" class="invalid-feedback form-text bg-danger rounded">Image url must be more than 5
+                        characters</small>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label for="releaseDate">Release date</label>
+                    <input
+                            th:field="*{releaseDate}"
+                            th:errorclass="is-invalid"
+                            required id="releaseDate" name="releaseDate" type="date" class="form-control" placeholder="Release date">
+                    <small id="releaseDateError" class="invalid-feedback form-text bg-danger rounded">Release date cannot be in the future</small>
+                </div>
+                <div class="col">
+                    <label for="videoUrl">Video Url</label>
+                    <input
+                            th:field="*{videoUrl}"
+                            th:errorclass="is-invalid"
+                            required
+
+                            minlength="4" id="videoUrl" name="videoUrl" type="text" class="form-control" placeholder="Video url">
+                </div>
+                <div class="col">
+                    <label for="duration">Movie Duration</label>
+                    <input th:field="*{duration}" required min="0" id="duration" th:errorclass="is-invalid"
+                           type="number" class="form-control" placeholder="Duration">
+                    <small id="durationError" class="invalid-feedback form-text bg-danger rounded">Minutes must be positive</small>
+                </div>
+            </div>
+
+
+
+            <div class="form-row">
+                <div class="col">
+                    <label>Director</label>
+                    <label for="directors"></label>
+                    <select th:field="*{director}" th:errorclass="is-invalid" id="directors" class="custom-select">
+                        <option value="" selected>Select Director</option>
+                        <option th:each="d : ${directors}" th:value="${d}" th:text="${d}">First Director</option>
+                    </select>
+                    <small id="directorError" class="invalid-feedback form-text bg-danger rounded">You must select director</small>
+                </div>
+                <div class="col">
+                    <label for="genre">Genre</label>
+                        <select th:field="*{genre}" th:errorclass="is-invalid" id="genre" name="genre" class="custom-select">
+                            <option value="" selected>Select genre</option>
+                            <option
+                                    th:each="g : ${T(com.example.demo.model.entity.Genre).values()}"
+                                    th:value="${g}"
+                                    th:text="${g}">Select genre</option>
+                        </select>
+
+                    <label for="genre2">Genre2</label>
+                    <select th:field="*{genre2}" th:errorclass="is-invalid" id="genre2" name="genre" class="custom-select">
+                        <option value="" selected>Select second genre</option>
+                        <option
+                                th:each="g : ${T(com.example.demo.model.entity.Genre).values()}"
+                                th:value="${g}"
+                                th:text="${g}">Select second genre</option>
+                    </select>
+                    <small id="genreError" class="invalid-feedback form-text bg-danger rounded">You must select genre</small>
+                </div>
+
+                <div class="col">
+                    <label for="rating">Rating</label>
+                    <input th:field="*{rating}" required min="0" th:errorclass="is-invalid" id="rating" name="rating" type="number" class="form-control" placeholder="Rating">
+                    <small id="ratingError" class="invalid-feedback form-text bg-danger rounded">rating must be positive</small>
+                </div>
+            </div>
+
+
+
+            <div class="form-row">
+                <div class="col">
+                    <label for="description">Description</label>
+                    <textarea th:field="*{description}" th:errorclass="is-invalid"  id="description" type="text" class="form-control" placeholder="Description"></textarea>
+                    <small  id="descriptionError" class="invalid-feedback form-text bg-danger rounded">Description length must be more than 5 characters</small>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <button class="btn btn-primary btn-block w-50" type="submit">Add New Movie</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="footer">
+        <div class="team">
+            &copy;iMovies Team 2021. All rights reserved.
+        </div>
+    </div>
+</footer>
+<script th:replace="fragments/fragment :: script"></script>
+
+</body>
+</html>

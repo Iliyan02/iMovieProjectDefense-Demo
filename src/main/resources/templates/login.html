@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/fragment :: head">
+</head>
+<body class="login-body">
+<header th:replace="fragments/fragment :: header"></header>
+<main>
+
+    <section class="one-step">
+        <h1>One more step</h1>
+    </section>
+        <div class="inputs-register">
+            <div th:if="${bad_credentials}" class="alert alert-danger" role="alert">
+                This username and password combination does not exist.
+            </div>
+            <form
+                    th:action="@{/users/login}"
+                    method="POST">
+                <!--User name-->
+                <div>
+                    <div class="col-auto">
+                        <label for="inputUsername" class="col-form-label text-light">Username</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text"
+                               name="username"
+                               th:value="${username}"
+                               required minlength="4" maxlength="20"
+                               id="inputUsername"
+                               class="form-control"
+                               aria-describedby="usernameHelpInline">
+                    </div>
+                </div>
+                <!--EO: User name-->
+
+                <!-- Password -->
+                <div>
+                    <div class="col-auto">
+                        <label for="inputPassword" class="col-form-label text-light">Password</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="password"
+                               name="password"
+                               required minlength="5" maxlength="20"
+                               id="inputPassword" class="form-control"
+                               aria-describedby="passwordHelpInline">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-2">
+                    <button class="btn btn-primary btn-block w-50" type="submit">Login</button>
+                </div>
+                <!-- EO: Password -->
+            </form>
+        </div>
+    </main>
+<footer th:replace="fragments/fragment :: footer">
+</footer>
+<script th:replace="fragments/fragment :: script"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/fragment :: head"></head>
+<body>
+<header th:replace="fragments/fragment :: header" ></header>
+<main>
+    <section class="clearfix">
+        <div id="banner_content_wrapper" th:object="${movie}">
+            <div id="poster">
+                <img th:src="*{imageUrl}" th:alt="*{name}"
+                     class="featured_image">
+                <a th:href="'https://www.youtube.com/embed/' + *{videoUrl}" class="play_button"><i class="fas fa-play"></i>
+                </a>
+
+            </div>
+            <div id="content" >
+                <h2 th:text="*{name}">DeadPool</h2>
+                <dd th:text="*{description}"  style="color: #f9f9f9">
+
+                    <dd th:text="|Director:*{director}, *{genre}, *{genre2}; Rating: *{rating} /10; Duration: *{duration} minutes. Release Date: *{releaseDate}|" class="info">
+            </div>
+        </div>
+    </section>
+</main>
+<footer th:replace="fragments/fragment :: footer"></footer>
+<script th:replace="fragments/fragment :: script"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,85 @@
+[{
+  "name": "Avengers: Infinity War",
+  "imageUrl": "https://melange.bg/wp-content/uploads/2018/05/poster.jpg",
+    "backgroundImage": "https://i.ytimg.com/vi/QwievZ1Tx-8/maxresdefault.jpg",
+    "videoUrl": "6ZfuNTqbHE8",
+    "description": "The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan.",
+    "releaseDate": "2018-04-23",
+    "duration": "160",
+    "rating": "9",
+    "genre": "FANTASY",
+    "genre2": "ACTION"
+},
+  {
+    "name": "The Transporter",
+    "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGmbA31yu_iLejZJjDB79cAqgfcIuJyfYHOGm570-feIK3KBBl",
+    "backgroundImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP4fM5ITyphlyKpCuH3hn_KmjkPVE1nlYK1Q&usqp=CAU",
+    "videoUrl": "0poXFSvX0_4",
+    "description": "An ex-soldier turned mercenary 'transporter' moves goods, human or otherwise, from one place to another. Complications arise when a job goes astray and he has to save the life of his female cargo.",
+    "releaseDate": "2002-10-02",
+    "duration": "93",
+    "rating": "7",
+    "genre": "ACTION",
+    "genre2": "THRILLER"
+  },
+  {
+    "name": "Godzilla vs. Kong",
+    "imageUrl": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNPj2bgqy8zGbvRUZPOpXvF58dwGwGk_1-GX1P_m7yHnj-8Ebd",
+    "backgroundImage": "https://images.theconversation.com/files/392328/original/file-20210329-23-c1eknf.jpeg?ixlib=rb-1.1.0&rect=41%2C0%2C746%2C444&q=45&auto=format&w=496&fit=clip",
+    "videoUrl": "odM92ap8_c0",
+    "description": "Fearsome monsters Godzilla and King Kong square off in an epic battle for the ages, while humanity looks to wipe out both of the creatures and take back the planet once and for all.",
+    "releaseDate": "2021-03-24",
+    "duration": "113",
+    "rating": "8",
+    "genre": "FANTASY",
+    "genre2": "ACTION"
+  },
+  {
+    "name": "Zack Snyder's Justice League",
+    "imageUrl": "https://resizing.flixster.com/9oCfDpSuCwu1OfvUs1gAG447z8Y=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzBlOWJiYmU5LTdhMmYtNGU5YS04YmYyLTkwZWMyNDA0ZmZjMC5qcGc=",
+    "backgroundImage": "https://resizing.flixster.com/9oCfDpSuCwu1OfvUs1gAG447z8Y=/ems.ZW1zLXByZC1hc3NldHMvbW92aWVzLzBlOWJiYmU5LTdhMmYtNGU5YS04YmYyLTkwZWMyNDA0ZmZjMC5qcGc=",
+    "videoUrl": "vM-Bja2Gy04",
+    "description": "Fueled by his restored faith in humanity and inspired by Superman's selfless act...",
+    "releaseDate": "2021-03-18",
+    "duration": "242",
+    "rating": "8",
+    "genre": "FANTASY",
+    "genre2": "ACTION"
+  },
+  {
+    "name": "Promising Young Woman",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMF38-eLVYR_FL3b9MZdsSaRs9NSq8W6R_RltNvoTr4lyX3JH",
+    "backgroundImage": "https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/NBCU-T0B3W-Full-Image_GalleryBackground-en-US-1609876289166._SX1080_.jpg",
+    "videoUrl": "7i5kiFDunk8",
+    "description": "Nothing in Cassie's life is what it appears to be -- she's wickedly smart, tantalizingly cunning, and she's living a secret double life by night. Now, an unexpected encounter is about to give Cassie a chance to right the wrongs from the past.",
+    "releaseDate": "2020-04-16",
+    "duration": "114",
+    "rating": "7",
+    "genre": "COMEDY",
+    "genre2": "THRILLER"
+  },
+  {
+    "name": "The Little Things",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9nMDqUyQYxBDgi528PaQV_Q-DUh31raUHX0wPYzoledMGF49a",
+    "backgroundImage": "https://ohthatfilmblog.files.wordpress.com/2021/02/l204_38291612166527.jpg",
+    "videoUrl": "1HZAnkxdYuA",
+    "description": "Deputy Sheriff Joe \"Deke\" Deacon joins forces with Sgt. Jim Baxter to search for a serial killer who's terrorizing Los Angeles. ",
+    "releaseDate": "2021-01-01",
+    "duration": "128",
+    "rating": "6",
+    "genre": "CRIMINAL",
+    "genre2": "THRILLER"
+  },
+  {
+    "name": "Da 5 Bloods",
+    "imageUrl": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHdxob058zWbaDjGY8onzkO6vkmwXlitBdNxfWWSgQuhLFF_qy",
+    "backgroundImage": "https://www.goldderby.com/wp-content/uploads/2020/06/da-5-bloods-cast-spike-lee.jpg",
+    "videoUrl": "D5RDTPfsLAI",
+    "description": "Four African American vets battle the forces of man and nature when they return to Vietnam seeking the remains of their fallen squad leader and the gold fortune he helped them hide.",
+    "releaseDate": "2020-06-12",
+    "duration": "156",
+    "rating": "7",
+    "genre": "WAR",
+    "genre2": "DRAMA"
+  }
+]

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="fragments/fragment :: head">
+</head>
+<body>
+<header th:replace="fragments/fragment :: header"></header>
+<main>
+
+
+    <section id="top_movies" class="clearfix">
+        <div class="wrapper">
+            <header>
+                <a id="headForMoviesGenres" href="/home">#Fantasy</a>
+            </header>
+
+            <div class="row">
+                <!-- Start single movie -->
+                <div th:each="a : ${fantasyMovies}" th:object="${a}" class="post">
+                    <img class="movie-home-images" th:src="*{imageUrl}" th:alt="*{name}">
+                    <a class="movie-name" th:href="@{/movies/movie-page-details/{id}(id = *{id})}" th:text="*{name}"></a>
+                    <p class="post_info" th:text="|Rating: *{rating} /10; Duration: *{duration} minutes.|">PG13 | 109 minutes</p>
+                </div>
+                <!-- EO: Start single movie -->
+            </div>
+        </div>
+    </section>
+
+    <section id="top_movies" class="clearfix">
+        <div class="wrapper">
+            <header>
+                <a id="headForMoviesGenres" href="/home">#Action</a>
+            </header>
+
+            <div class="row">
+                <!-- Start single movie -->
+                <div th:each="a : ${actionMovies}" th:object="${a}" class="post">
+                    <img class="movie-home-images" th:src="*{imageUrl}" th:alt="*{name}">
+                    <a class="movie-name" th:href="@{/movies/movie-page-details/{id}(id = *{id})}" th:text="*{name}"></a>
+                    <p class="post_info" th:text="|Rating: *{rating} /10; Duration: *{duration} minutes.|">PG13 | 109 minutes</p>
+                </div>
+                <!-- EO: Start single movie -->
+            </div>
+        </div>
+    </section>
+
+    <section id="top_movies" class="clearfix">
+        <div class="wrapper">
+            <header>
+                <a id="headForMoviesGenres" href="/home">#Thriller</a>
+            </header>
+
+            <div class="row">
+                <!-- Start single movie -->
+                <div th:each="a : ${thrillerMovies}" th:object="${a}" class="post">
+                    <img class="movie-home-images" th:src="*{imageUrl}" th:alt="*{name}">
+                    <a class="movie-name" th:href="@{/movies/movie-page-details/{id}(id = *{id})}" th:text="*{name}"></a>
+                    <p class="post_info" th:text="|Rating: *{rating} /10; Duration: *{duration} minutes.|">PG13 | 109 minutes</p>
+                </div>
+                <!-- EO: Start single movie -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="top_movies" class="clearfix">
+        <div class="wrapper">
+            <header>
+                <a id="headForMoviesGenres" href="/home">#Comedy</a>
+            </header>
+
+            <div class="row">
+                <!-- Start single movie -->
+                <div th:each="a : ${comedyMovies}" th:object="${a}" class="post">
+                    <img class="movie-home-images" th:src="*{imageUrl}" th:alt="*{name}">
+                    <a class="movie-name" th:href="@{/movies/movie-page-details/{id}(id = *{id})}" th:text="*{name}"></a>
+                    <p class="post_info" th:text="|Rating: *{rating} /10; Duration: *{duration} minutes.|">PG13 | 109 minutes</p>
+                </div>
+                <!-- EO: Start single movie -->
+            </div>
+        </div>
+    </section>
+</main>
+<footer th:replace="fragments/fragment :: footer"></footer>
+<script th:replace="fragments/fragment :: script"></script>
+<script th:src="@{js/search-bar.js}"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head th:replace="fragments/fragment :: head">
+</head>
+<body>
+<header th:replace="fragments/fragment :: header"></header>
+<main>
+    <section id="top_movies" class="clearfix">
+        <div class="wrapper">
+            <div class="row" th:each="m : ${allMovies}" th:object="${m}">
+                <!-- Start single movie -->
+                <ul>
+                    <li style="color: white" th:text="*{name}"></li>
+                    <a th:href="@{/movies/delete/{id}(id = *{id})}"  type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
+                </ul>
+                <!-- EO: Start single movie -->
+            </div>
+        </div>
+    </section>
+</main>
+<footer th:replace="fragments/fragment :: footer"></footer>
+
+</body>
+</html>
